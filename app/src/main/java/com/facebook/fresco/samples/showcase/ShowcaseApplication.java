@@ -72,6 +72,8 @@ public class ShowcaseApplication extends Application {
             .build());
     Fresco.initialize(this, imagePipelineConfig, draweeConfigBuilder.build());
 
+//    Fresco.initialize(this);
+
     final Context context = this;
     Stetho.initialize(
         Stetho.newInitializerBuilder(context)

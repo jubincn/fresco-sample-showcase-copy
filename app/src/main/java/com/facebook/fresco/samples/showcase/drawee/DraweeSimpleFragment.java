@@ -38,6 +38,7 @@ public class DraweeSimpleFragment extends BaseShowcaseFragment {
   public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
     final ImageUriProvider imageUriProvider = ImageUriProvider.getInstance(getContext());
     final Uri uri = imageUriProvider.createSampleUri(ImageUriProvider.ImageSize.M);
+//    Uri uri = Uri.parse("https://frescolib.org/static/sample-images/animal_a_m.jpg");
 
     SimpleDraweeView simpleDraweeView = (SimpleDraweeView) view.findViewById(R.id.drawee_view);
     simpleDraweeView.setImageURI(uri);

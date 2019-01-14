@@ -107,35 +107,35 @@ public class ImageUriProvider {
   private static final String RANDOM_URI_PATTERN_M = "http://picsum.photos/800/800?image=%d";
 
   private static final String[] SAMPLE_URIS_LANDSCAPE = new String[]{
-      "http://frescolib.org/static/sample-images/animal_a_%s.jpg",
-      "http://frescolib.org/static/sample-images/animal_b_%s.jpg",
-      "http://frescolib.org/static/sample-images/animal_c_%s.jpg",
-      "http://frescolib.org/static/sample-images/animal_e_%s.jpg",
-      "http://frescolib.org/static/sample-images/animal_f_%s.jpg",
-      "http://frescolib.org/static/sample-images/animal_g_%s.jpg",
+      "https://frescolib.org/static/sample-images/animal_a_%s.jpg",
+      "https://frescolib.org/static/sample-images/animal_b_%s.jpg",
+      "https://frescolib.org/static/sample-images/animal_c_%s.jpg",
+      "https://frescolib.org/static/sample-images/animal_e_%s.jpg",
+      "https://frescolib.org/static/sample-images/animal_f_%s.jpg",
+      "https://frescolib.org/static/sample-images/animal_g_%s.jpg",
   };
 
   private static final String[] SAMPLE_URIS_PORTRAIT = new String[]{
-      "http://frescolib.org/static/sample-images/animal_d_%s.jpg",
+      "https://frescolib.org/static/sample-images/animal_d_%s.jpg",
   };
 
   private static final String[] SAMPLE_URIS_LANDSCAPE_PNG =
       new String[] {
-        "http://frescolib.org/static/sample-images/animal_a.png",
-        "http://frescolib.org/static/sample-images/animal_b.png",
-        "http://frescolib.org/static/sample-images/animal_c.png",
-        "http://frescolib.org/static/sample-images/animal_e.png",
-        "http://frescolib.org/static/sample-images/animal_f.png",
-        "http://frescolib.org/static/sample-images/animal_g.png",
+        "https://frescolib.org/static/sample-images/animal_a.png",
+        "https://frescolib.org/static/sample-images/animal_b.png",
+        "https://frescolib.org/static/sample-images/animal_c.png",
+        "https://frescolib.org/static/sample-images/animal_e.png",
+        "https://frescolib.org/static/sample-images/animal_f.png",
+        "https://frescolib.org/static/sample-images/animal_g.png",
       };
 
   private static final String[] SAMPLE_URIS_PORTRAIT_PNG =
       new String[] {
-        "http://frescolib.org/static/sample-images/animal_d.png",
+        "https://frescolib.org/static/sample-images/animal_d.png",
       };
 
   private static final String NON_EXISTING_URI =
-      "http://frescolib.org/static/sample-images/does_not_exist.jpg";
+      "https://frescolib.org/static/sample-images/does_not_exist.jpg";
 
   private static final String SAMPLE_URI_WEBP_STATIC =
       "http://www.gstatic.com/webp/gallery/2.webp";
