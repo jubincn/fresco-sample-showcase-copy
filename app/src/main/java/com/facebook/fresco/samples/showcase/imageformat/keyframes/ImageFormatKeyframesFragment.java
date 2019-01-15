@@ -35,7 +35,7 @@ import com.facebook.fresco.samples.showcase.misc.CheckerBoardDrawable;
 public class ImageFormatKeyframesFragment extends BaseShowcaseFragment {
 
   public static final Uri URI_KEYFRAMES_ANIMATION =
-      Uri.parse("http://frescolib.org/static/sample-images/animation.keyframes");
+      Uri.parse("https://frescolib.org/static/sample-images/animation.keyframes");
 
   private SimpleDraweeView mSimpleDraweeView;
 

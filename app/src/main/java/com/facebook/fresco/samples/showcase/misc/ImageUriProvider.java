@@ -281,7 +281,7 @@ public class ImageUriProvider {
 
     for (int i = 0; i < numImages; i++) {
       final int imageId = random.nextInt(RANDOM_URI_MAX_IMAGE_ID);
-      data.add(Uri.parse(String.format((Locale) null, uriFormat, imageId)));
+      data.add(Uri.parse(String.format(uriFormat, imageId)));
     }
     return data;
   }

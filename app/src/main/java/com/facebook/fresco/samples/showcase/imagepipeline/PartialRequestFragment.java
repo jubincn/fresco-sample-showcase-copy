@@ -30,7 +30,7 @@ import com.facebook.imagepipeline.request.ImageRequestBuilder;
 public class PartialRequestFragment extends BaseShowcaseFragment {
 
   public static final Uri URI =
-      Uri.parse("http://frescolib.org/static/sample-images/animal_e_l.jpg");
+      Uri.parse("https://frescolib.org/static/sample-images/animal_e_l.jpg");
 
   public PartialRequestFragment() {
     // Required empty public constructor

@@ -35,7 +35,7 @@ import com.facebook.fresco.samples.showcase.misc.CheckerBoardDrawable;
 public class ImageFormatSvgFragment extends BaseShowcaseFragment {
 
   private static final Uri URI_SVG_HALF_TRANSPARENT =
-      Uri.parse("http://frescolib.org/static/sample-images/fresco_logo_half_transparent.svg");
+      Uri.parse("https://frescolib.org/static/sample-images/fresco_logo_half_transparent.svg");
 
   private SimpleDraweeView mSimpleDraweeView;
   private ShowRestartMessageDialog mShowRestartMessageDialog;

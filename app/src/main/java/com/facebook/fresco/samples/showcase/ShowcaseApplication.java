@@ -63,8 +63,8 @@ public class ShowcaseApplication extends Application {
     DraweeConfig.Builder draweeConfigBuilder = DraweeConfig.newBuilder();
     CustomImageFormatConfigurator.addCustomDrawableFactories(this, draweeConfigBuilder);
 
-    draweeConfigBuilder.setDebugOverlayEnabledSupplier(
-        DebugOverlaySupplierSingleton.getInstance(getApplicationContext()));
+//    draweeConfigBuilder.setDebugOverlayEnabledSupplier(
+//        DebugOverlaySupplierSingleton.getInstance(getApplicationContext()));
 
     BitmapCounterProvider.initialize(
         BitmapCounterConfig.newBuilder()

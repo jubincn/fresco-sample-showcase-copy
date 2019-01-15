@@ -49,11 +49,11 @@ import java.util.Locale;
 public class ImageFormatProgressiveJpegFragment extends BaseShowcaseFragment {
 
   public static final Uri URI_PJPEG_LARGE =
-      Uri.parse("http://frescolib.org/static/sample-images/animal_c_l.jpg");
+      Uri.parse("https://frescolib.org/static/sample-images/animal_c_l.jpg");
   public static final Uri URI_PJPEG_MEDIUM =
-      Uri.parse("http://frescolib.org/static/sample-images/animal_d_m.jpg");
+      Uri.parse("https://frescolib.org/static/sample-images/animal_d_m.jpg");
   public static final Uri URI_PJPEG_SMALL =
-      Uri.parse("http://frescolib.org/static/sample-images/animal_e_s.jpg");
+      Uri.parse("https://frescolib.org/static/sample-images/animal_e_s.jpg");
   public static final Uri URI_PJPEG_SLOW =
       Uri.parse("http://pooyak.com/p/progjpeg/jpegload.cgi?o=1");
 

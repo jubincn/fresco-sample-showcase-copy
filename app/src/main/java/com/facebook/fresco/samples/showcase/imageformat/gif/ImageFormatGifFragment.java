@@ -39,11 +39,11 @@ import com.facebook.imagepipeline.request.ImageRequestBuilder;
 public class ImageFormatGifFragment extends BaseShowcaseFragment {
 
   public static final Uri URI_GIF_S =
-      Uri.parse("http://frescolib.org/static/sample-images/fresco_logo_anim_full_frames_with_pause_s.gif");
+      Uri.parse("https://frescolib.org/static/sample-images/fresco_logo_anim_full_frames_with_pause_s.gif");
   public static final Uri URI_GIF_M =
-      Uri.parse("http://frescolib.org/static/sample-images/fresco_logo_anim_full_frames_with_pause_m.gif");
+      Uri.parse("https://frescolib.org/static/sample-images/fresco_logo_anim_full_frames_with_pause_m.gif");
   public static final Uri URI_GIF_L =
-      Uri.parse("http://frescolib.org/static/sample-images/fresco_logo_anim_full_frames_with_pause_l.gif");
+      Uri.parse("https://frescolib.org/static/sample-images/fresco_logo_anim_full_frames_with_pause_l.gif");
 
   private static final Entry[] SPINNER_ENTRIES = new Entry[]{
       new Entry(R.string.format_gif_label_small, URI_GIF_S),
