@@ -3,18 +3,22 @@ package com.facebook.fresco.samples.showcase.drawee;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.graphics.PointF;
 import android.graphics.Rect;
 import android.graphics.RectF;
 
 import com.facebook.drawee.drawable.ProgressBarDrawable;
-import com.facebook.fresco.samples.showcase.utils.ArcUtils;
 
 public class CircleProgressBarDrawable extends ProgressBarDrawable {
     private final Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private int mLevel = 0;
     private int maxLevel = 10000;
+    private float radius;
+    private float strokeWidth;
 
+    public CircleProgressBarDrawable(float radiusPx, float strokeWidth) {
+        this.radius = radiusPx;
+        this.strokeWidth = strokeWidth;
+    }
 
     @Override
     protected boolean onLevelChange(int level) {
@@ -35,18 +39,16 @@ public class CircleProgressBarDrawable extends ProgressBarDrawable {
     private void drawBar(Canvas canvas, int level, int color) {
         Rect bounds = getBounds();
 
-        RectF rectF = new RectF((float) (bounds.right * .4), (float) (bounds.bottom * .4),
-                (float) (bounds.right * .6), (float) (bounds.bottom * .6));
-
-        float x = bounds.right / 2f;
-        float y = bounds.bottom / 2f;
-        PointF center = new PointF(x, y);
+        float centerX = bounds.right / 2f;
+        float centerY = bounds.bottom / 2f;
+        RectF rectF = new RectF(centerX - radius, centerY - radius, centerX + radius, centerY + radius);
 
         mPaint.setColor(color);
         mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setStrokeWidth(1);
-        if (level != 0) {
-            ArcUtils.drawArc(canvas, center, 50, 0, (float) (level * 360 / maxLevel), mPaint );
+        mPaint.setStrokeWidth(strokeWidth);
+        if (level != 0){
+            canvas.drawArc(rectF, 0, (float) (level * 360 / maxLevel), false, mPaint);
         }
+
     }
 }

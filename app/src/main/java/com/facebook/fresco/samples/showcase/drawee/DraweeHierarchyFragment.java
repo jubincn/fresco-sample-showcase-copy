@@ -23,8 +23,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
-import com.facebook.common.util.UriUtil;
+
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.drawable.ProgressBarDrawable;
 import com.facebook.drawee.drawable.ScalingUtils.ScaleType;
@@ -33,7 +32,6 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.fresco.samples.showcase.BaseShowcaseFragment;
 import com.facebook.fresco.samples.showcase.R;
 import com.facebook.fresco.samples.showcase.misc.ImageUriProvider;
-import com.facebook.imagepipeline.request.ImageRequest;
 
 /**
  * A {@link Fragment} that illustrates the different drawables one can set in a hierarchy.
@@ -67,11 +65,11 @@ public class DraweeHierarchyFragment extends BaseShowcaseFragment {
     final Drawable failureDrawable = getResources().getDrawable(R.drawable.ic_error_black_96dp);
     DrawableCompat.setTint(failureDrawable, Color.RED);
 
-    final ProgressBarDrawable progressBarDrawable = new CircleProgressBarDrawable();
+    float radiusPx = getResources().getDimensionPixelSize(R.dimen.drawee_hierarchy_circle_progress_radius);
+    final ProgressBarDrawable progressBarDrawable = new CircleProgressBarDrawable(radiusPx, 12);
     progressBarDrawable.setColor(getResources().getColor(R.color.accent));
     progressBarDrawable.setBackgroundColor(getResources().getColor(R.color.primary));
-    progressBarDrawable
-        .setRadius(getResources().getDimensionPixelSize(R.dimen.drawee_hierarchy_progress_radius));
+    progressBarDrawable.setRadius(getResources().getDimensionPixelSize(R.dimen.drawee_hierarchy_progress_radius));
 
     draweeView.getHierarchy().setProgressBarImage(progressBarDrawable);
     draweeView.getHierarchy().setFailureImage(failureDrawable, ScaleType.CENTER_INSIDE);
