@@ -67,7 +67,7 @@ public class DraweeHierarchyFragment extends BaseShowcaseFragment {
     final Drawable failureDrawable = getResources().getDrawable(R.drawable.ic_error_black_96dp);
     DrawableCompat.setTint(failureDrawable, Color.RED);
 
-    final ProgressBarDrawable progressBarDrawable = new ProgressBarDrawable();
+    final ProgressBarDrawable progressBarDrawable = new CircleProgressBarDrawable();
     progressBarDrawable.setColor(getResources().getColor(R.color.accent));
     progressBarDrawable.setBackgroundColor(getResources().getColor(R.color.primary));
     progressBarDrawable
